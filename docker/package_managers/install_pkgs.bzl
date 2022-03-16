@@ -134,7 +134,7 @@ def _impl(ctx, image_tar = None, installables_tar = None, installation_cleanup_c
         execution_requirements = {
             # This action produces large output files, and isn't economical to
             # upload to a remote cache.
-            "no-remote-cache": "1",
+            "no-remote-cache": "0",
         },
         mnemonic = "ExtractImageId",
         tools = [ctx.executable._extract_image_id, ctx.executable._to_json_tool],

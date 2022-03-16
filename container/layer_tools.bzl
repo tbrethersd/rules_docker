@@ -191,7 +191,7 @@ def assemble(
             # This action produces large output files, but doesn't require much CPU to compute.
             # It's not economical to send this to the remote-cache, instead local cache misses
             # should just run join_layers again.
-            "no-remote-cache": "1",
+            "no-remote-cache": "0",
         },
         mnemonic = "JoinLayers",
     )

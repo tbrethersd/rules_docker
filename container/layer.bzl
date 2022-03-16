@@ -169,7 +169,7 @@ def build_layer(
         execution_requirements = {
             # This action produces large output files, so it's not
             # economical to send this to the remote-cache
-            "no-remote-cache": "1",
+            "no-remote-cache": "0",
         },
         use_default_shell_env = True,
         mnemonic = "ImageLayer",
